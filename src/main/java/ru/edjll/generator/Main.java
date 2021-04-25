@@ -64,17 +64,16 @@ public class Main {
             statement.execute("insert into user_info (user_id, city_id) values " + sqlUserInfo);
             statement.execute("insert into user_friend (user_id, friend_id, status, date) values " + sqlUserFriend);
 
-
-            System.out.println("End : " + LocalDateTime.now());
-
-            statement.close();
-
-            System.out.println("Close statement");
-
-            connection.close();
-
-            System.out.println("Close connection");
-
         }
+
+        System.out.println("End : " + LocalDateTime.now());
+
+        statement.close();
+
+        System.out.println("Close statement");
+
+        connection.close();
+
+        System.out.println("Close connection");
     }
 }
